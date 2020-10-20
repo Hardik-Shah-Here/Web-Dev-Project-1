@@ -1,0 +1,312 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+</style>
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+.background-menu{
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	cursor: pointer;
+	top:0;
+}
+.nav-list{
+	width:70%;
+	/*background-color: black;*/
+	display: flex;
+	padding: 0px;
+
+
+}
+.nav-list li a:hover{
+	color: gray;
+}
+.nav-list li{
+	list-style-type: none;
+	padding: 12px 25px;
+	/*margin-left: 10%;*/
+}
+.rightnav{
+	width: 30%;
+	/*background-color: blue;*/
+	text-align: right;
+	padding: 0 23px;
+
+}
+.logo{
+	width:20%;
+}
+.logo img{
+	margin-top: 8px;
+	height:50px;
+	width:55px;
+	border: solid white 2px;
+	border-radius: 50px;
+	margin-left: 30%;
+}
+
+.nav-list li a{
+	text-decoration: none;
+	color: white;
+	margin: auto;
+	font-size: 21px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#search{
+	padding:5px;
+	font-size:17px;
+	border: 2px solid gray;
+	border-radius: 8px;
+}
+
+.background{
+	background-color: rgba(0, 0, 0, 0.6);
+	background-image: url("Images/Study.jpg");
+	background-size: cover;
+	background-blend-mode: darken;
+
+}
+
+
+
+
+
+.boxmain{
+	display:flex;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	font-family: Tahoma, Geneva, Verdana, serif;
+	max-width: 50%;
+	margin: auto;
+	height:80vh;
+}
+
+.firstSection{
+	height: 100%;
+}
+.firstHalf{
+	width:80%;
+	height:50%;
+	margin-bottom:68px;
+}
+.secondHalf{
+	width:30%;
+	height:50%;
+}
+.secondHalf img{
+	width:90%;
+	border: 3px solid white;
+    border-radius:25%;
+    display: block;
+    margin-left:3%;
+}
+.text-big{
+	font-size: 35px;
+}
+.text-small{
+	font-size: 14px;
+}
+.btn{
+	padding: 8px 20px;
+	margin: 7px 8px;
+	border: 2px solid white;
+	border-radius: 10px;
+	font-size: 14px;
+	cursor: pointer;
+	background: none;
+	color: white;
+}
+
+
+
+
+.section{
+	display:flex;
+	height:400px;
+	align-items:center;
+	justify-content: center;
+	max-width:80%;
+	margin:auto;
+	font-family: 'Ubuntu', sans-serif;
+}
+.paras{
+	width:70%;
+}
+.thumbnail{
+	width:25%;
+}
+.imgFluid{
+	height: 100%;
+    width: 73%;
+    margin-left: 22px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 30px;
+}
+
+.left{
+	flex-direction: row-reverse;
+}
+
+
+
+
+.contact{
+	max-height:100%;
+}
+.text-format{
+	text-align: center;
+	padding: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 31px;
+	color:white;
+}
+.form{
+	max-width:60%;
+	margin:auto;
+}
+.form-input{
+	width:100%;
+	font-size: 17px;
+	border: 2px solid gray;
+    border-radius: 6px;
+    margin: 8px 0;
+    padding:3px;
+    font-family: Georgia,sans-serif;
+}
+.btn-new{
+	color:white;
+	border:2px solid white;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 2% 0 10%;
+}
+
+.text-area{
+	height:120px;
+}
+
+
+
+.btn-sm{
+	font-size: 10px;
+}
+.text-footer{
+	text-align: center;
+	padding: 15px;
+	font-family: 'Ubuntu', sans-serif;
+	color:white;
+}
+footer{
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.burger{
+	position: absolute;
+	cursor:pointer;
+	right:5%;
+	top:15px;
+	display:none;
+}
+
+.line{
+	width:33px;
+	background-color: white;
+	height:4px;
+	margin:3px 3px;
+}
+@media only screen and (max-width: 1150px){
+	/*.nav-list{
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.navbar{
+		flex-direction: column;
+		transition: all 0.7s ease-out;
+	}
+	.rightnav{
+		text-align: center;
+	}
+	#search{
+		width:100%;
+		text-align: center;
+	}
+	.burger{
+		display:block;
+	}
+	.ht-nav{
+		height:62px;
+	}
+	.v-class{
+		opacity: 0;
+	}*/
+	.nav-list{
+		flex-direction: column;
+		max-width: 100%;
+		align-items: center;
+	}
+	.navbar{
+		flex-direction: column;
+		height:435px;
+		max-width: 100%;
+		transition: all 0.6s ease-out;
+	}
+	.rightnav{
+		max-width: 100%;
+		flex-direction: column;
+		align-items:center;
+		text-align: center;
+	}
+	#search{
+		width: 95%;
+	}
+	.burger{
+		display: block;
+	}
+	.background-menu{
+	background-color: rgba(0, 0, 0, 0.6);
+	background-image: url("Images/Study.jpg");
+	background-size: cover;
+	background-blend-mode: darken;
+	}
+	.h-nav-resp{
+		height: 50px;
+	}
+	.v-class-resp{
+		opacity: 0;
+	}
+	.boxmain{
+		flex-direction: column-reverse;
+		max-width: 100%;
+		height:100%;
+	}
+	.secondHalf{
+		width: 20%;
+    	height: 40%;
+    	margin-top: 13%;
+	}
+	.section{
+		height: 100%;
+		flex-direction: column-reverse;
+	}
+}
